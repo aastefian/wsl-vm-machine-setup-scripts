@@ -15,5 +15,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 echo "\n\n ### Setting nodejs version ### \n\n"
-nvm install 14.18.1
-nvm use 14.18.1
+nvm install 18.16.1
+nvm use 18.16.1
