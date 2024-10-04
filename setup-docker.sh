@@ -12,6 +12,8 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 
+# Install docker packages
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 # Old stuff
 # echo "\n\n ### Getting docker-compose ### \n\n"
