@@ -17,3 +17,10 @@ export NVM_DIR="$HOME/.nvm"
 echo "\n\n ### Setting nodejs version ### \n\n"
 nvm install 18.16.1
 nvm use 18.16.1
+
+# https://cloud.google.com/sdk/docs/install#deb
+echo "\n\n ### Installing gcloud ### \n\n"
+sudo apt-get update
+sudo apt-get install apt-transport-https ca-certificates gnupg curl
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /usr/share/keyrings/cloud.google.gpg
+sudo apt-get update && sudo apt-get install google-cloud-cli
