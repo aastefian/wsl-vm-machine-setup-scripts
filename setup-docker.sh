@@ -15,9 +15,6 @@ sudo apt-get update
 # Install docker packages
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-# Old stuff
-# echo "\n\n ### Getting docker-compose ### \n\n"
-# sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-# echo "\n\n ### Making them executable ### \n\n"
-# sudo chmod +x /usr/local/bin/docker-compose
-# docker-compose --version
+# Make it run rootless
+dockerd-rootless-setuptool.sh install 
+sudo usermod -aG docker $USER   
