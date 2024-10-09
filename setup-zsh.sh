@@ -6,3 +6,6 @@ sudo apt install zsh
 
 echo "\n\n ### Installing oh my zsh ### \n\n"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+echo "\n\n ### Setting shell to use bash ### \n\n"
+npm config set script-shell bash
