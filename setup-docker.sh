@@ -20,5 +20,5 @@ curl -SL https://github.com/docker/compose/releases/download/v2.29.6/docker-comp
 sudo chmod +x /usr/bin/docker-compose      
 
 # Make it run rootless
-dockerd-rootless-setuptool.sh install 
+# dockerd-rootless-setuptool.sh install 
 sudo usermod -aG docker $USER   
