@@ -15,8 +15,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 echo "\n\n ### Setting nodejs version ### \n\n"
-nvm install 18.16.1
-nvm use 18.16.1
+nvm install 24.12.0
+nvm use 24.12.0
+
+echo "\n\n ### Installing pnpm ### \n\n"
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+
 
 # https://cloud.google.com/sdk/docs/install#deb
 echo "\n\n ### Installing gcloud ### \n\n"
