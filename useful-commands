@@ -1,0 +1,4 @@
+#Useful commands
+
+# Inspect docker image
+docker run --rm IMAGE_NAME bash -c "dpkg -l"
